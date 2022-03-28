@@ -6,7 +6,7 @@ cálculo de seguros de vida. Por cada cotización se debe calcular el costo anua
 Empieza calculando _factor_
 
 1. Si el cliente es hombre entonces _factor_ es igual a 4%, si es mujer entonces _factor_ es igual 3%
-2. Si edad (sólo considerar el año de nacimiento)
+2. Si edad (sólo considerar el mes y año de nacimiento)
    * menor o igual a 25 años, factor + 0.5%
    * mayor a 25 y menor o igual a 45 años, factor + 1%
    * mayor a 45 y menor o igual a 65 años, factor + 1.5%
