@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="tema.css" />
+        <title>Cotizador</title>
+
+    		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script src="cotizador.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="header">
+                <h1>
+                    Cotización de seguro de vida
+                </h1>
+            </div>
+
+            <div id="content">
+                <!-- CONTENIDO DE LA APLICACIÓN  -->
+                <form>
+                    <fieldset><legend>Datos del cliente</legend>
+                        <h3>Nombre</h3>
+                        <input type="text">
+
+                        <h3>Sexo</h3>
+                        <div class="group">
+                            <label class="chk"><input type="radio"> Hombre</label>
+                            <label class="chk"><input type="radio"> Mujer</label>
+                        </div>
+
+                        <h3>Fecha de nacimiento</h3>
+                        <input type="date"/>
+			    
+			    <h3>Estado de residencia</h3>
+			    <select>
+				<option value=''>Estado</option>				
+			    </select>
+
+                        <h3>Padecimientos</h3>
+                        <div class="group">
+                            <label class="chk">
+                                <input type="checkbox"> Cáncer
+                            </label>
+                            <label class="chk">
+                                <input type="checkbox"> Trombosis
+                            </label>
+                            <label class="chk">
+                                <input type="checkbox"> Enfisema pulmonar
+                            </label>
+                            <label class="chk">
+                                <input type="checkbox"> Insuficiencia hepática
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Beneficiarios</legend>
+
+                        <h3>Nombre del beneficiario 1</h3>
+                        <input type="text">
+
+                        <h3>Nombre del beneficiario 2</h3>
+                        <input type="text">
+                    </fieldset>
+            <fieldset>
+                <legend>Seguro a contratar</legend>
+                <h3>Cantidad a recibir</h3>
+
+                <select>
+                    <option value=""></option>
+                    <option value="150000">$150,000</option>
+                    <option value="350000">$350,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="1000000">$1,000,000</option>
+                    <option value="1500000">$1,500,000</option>
+                </select>
+
+                <h3>Método de pago</h3>
+                <div class="group">
+                    <label class="chk"><input type="radio" checked="checked">Pago anual</label>
+                    <label class="chk"><input type="radio">Pago semestral</label>
+                    <label class="chk"><input type="radio">Pago trimestral</label>
+                    <label class="chk"><input type="radio">Pago mensual</label>
+                </div>
+            </fieldset>
+
+            <p class="chk-confirma"><label><input type="checkbox">He leído y acepto los términos y condiciones</label></p>
+
+            <button type="button" class="boton-1" onClick="mostrarResumen()">Cotizar</button>
+      </form>
+    </div>
+    <div id="footer">
+        <h2>Cotización de seguro de vida</h2>
+        <p>Copyright © App name, 2021</p>
+    </div>
+
+			<div id="confirmacion" title="Cotizador - resumen de tu seguro" class="ui-helper-hidden">
+				<table class="resumen" border="1">					
+					<tr>
+						<td class="c1">
+							<h3>Costo anual</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+                    <tr>
+                        <td class="c1">
+                            <h3>Forma de pago</h3>
+                            El seguro se pagará de forma
+                        </td>
+                        <td class="c2"><input type="text" class="resumen"></td>
+                    </tr>
+					<tr>
+						<td class="c1">
+							<h3>Nombre del cliente</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Edad del cliente</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Sexo del cliente</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+                    <tr>
+                        <td class="c1">
+                            <h3>Padecimientos</h3>
+                        </td>
+                        <td class="c2">
+                            <ul>
+                                <li>Padecimiento 1</li>
+                                <li>Padecimiento 2</li>
+                                <li>Padecimiento 3</li>
+                                <li>Padecimiento 4</li>
+                            </ul>
+                        </td>
+                    </tr>
+					<tr>
+						<td class="c1">
+							<h3>Nombre del beneficiario 1</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+					<tr>
+						<td class="c1">
+                            <h3>Nombre del beneficiario 2</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+					<tr>
+						<td class="c1">
+							<h3>Importe que recibir</h3>
+						</td>
+						<td class="c2"><input type="text" class="resumen"></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="errores" title="Cotizador - errores" class="ui-helper-hidden">
+				<div id="texto-errores">
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
