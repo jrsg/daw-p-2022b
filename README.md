@@ -37,5 +37,5 @@ Una vez calculado:
     7. Padecimientos (lista no ordenada con los seleccionados)
     8. Nombre del beneficiario 1 y 2 (texto)
     9. Importe a recibir (importe)
-3. Los datos de nombre del asegurado, sexo, fecha de nacimiento, Estado de residencia, importe a recibir y el nombre de al menos 1 beneficiario son datos obligatorios, los cuales se valida su captura antes de mostrar el resumen y calcular el costo anual. Por cada dato obligatorio faltante, el programa lo reporta con un mensaje de error explícito. (1.5 punto)
-4. La lista de Estados de residencia es llenada vía código declarando un _array_ y empleando alguna estructura cíclica (1.5 punto)
+3. Los datos de nombre del asegurado, sexo, fecha de nacimiento, Estado de residencia, importe a recibir y el nombre de al menos 1 beneficiario son datos obligatorios, los cuales se valida su captura antes de mostrar el resumen y calcular el costo anual. Por cada dato obligatorio faltante, el programa lo reporta con un mensaje de error explícito (usa window.alert). (1.5 punto)
+4. El dato de la "Edad del cliente" se calcula considerando el mes y año de la fecha de nacimiento. Asume que todos los años tienen la misma cantidad de días (1.5 punto)

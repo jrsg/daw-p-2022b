@@ -124,12 +124,22 @@ h3{
 	font-size:0.90em;
 }
 
-.cotizador{
+table{
 	width:100%;
 }
 
-.cotizador .c1{
+.c1{
 	width:70%;
+}
+
+td select{
+	display: block;
+	margin: 0 auto;
+}
+
+.resumen-largo{
+	width: 530px;
+	margin-bottom: 15px;
 }
 
 /*********************************/
@@ -245,24 +255,25 @@ table tfoot td {
 .resumen{
 	width:100%;
 }
-.resumen .c1{
-	width: 80%;
+.t-resumen .c1{
+	width: 70%;
 }
 
-.resumen .c1 p{
+.t-resumen .c1 p{
 	font-size:0.85em;
 }
 
 input.resumen{
-	width: 100px;
+	width: 120px;
+	margin: 0 auto;
 }
 
-.resumen ul{
+.t-resumen ul{
 	margin: 0 0 0 5px;
 	padding:0;
 }
 
-.resumen ul li{
+.t-resumen ul li{
 	font-size: 0.85em;
 }
 
@@ -280,4 +291,11 @@ input.resumen{
 .chk-confirma{
 	text-align:center;
 	margin-bottom: 40px;
+}
+
+.t-resumen{
+	width: 100%;
+}
+.t-resumen th, .t-resumen td{
+	border: 1px solid #eaeaea;
 }

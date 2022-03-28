@@ -31,44 +31,116 @@
 
                         <h3>Sexo</h3>
                         <div class="group">
-                            <label class="chk"><input type="radio"> Hombre</label>
-                            <label class="chk"><input type="radio"> Mujer</label>
+                            <select>
+                                <option></option>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
                         </div>
 
                         <h3>Fecha de nacimiento</h3>
                         <input type="date"/>
 			    
 			    <h3>Estado de residencia</h3>
-			    <select>
-				<option value=''>Estado</option>				
-			    </select>
+                <select>
+                    <option value=''>Estado</option>
+                    <option value="Aguascalientes">Aguascalientes</option>
+                    <option value="Baja California">Baja California</option>
+                    <option value="Baja California Sur">Baja California Sur</option>
+                    <option value="Campeche">Campeche</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="Coahuila">Coahuila</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Ciudad de México">Ciudad de México</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Estado de México">Estado de México</option>
+                    <option value="Guanajuato">Guanajuato</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="Michoacán">Michoacán</option>
+                    <option value="Morelos">Morelos</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="Nuevo León">Nuevo León</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Querétaro">Querétaro</option>
+                    <option value="Quintana Roo">Quintana Roo</option>
+                    <option value="San Luis Potosí">San Luis Potosí</option>
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tabasco">Tabasco</option>
+                    <option value="Tamaulipas">Tamaulipas</option>
+                    <option value="Tlaxcala">Tlaxcala</option>
+                    <option value="Veracruz">Veracruz</option>
+                    <option value="Yucatán">Yucatán</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                </select>
 
-                        <h3>Padecimientos</h3>
-                        <div class="group">
-                            <label class="chk">
-                                <input type="checkbox"> Cáncer
-                            </label>
-                            <label class="chk">
-                                <input type="checkbox"> Trombosis
-                            </label>
-                            <label class="chk">
-                                <input type="checkbox"> Enfisema pulmonar
-                            </label>
-                            <label class="chk">
-                                <input type="checkbox"> Insuficiencia hepática
-                            </label>
-                        </div>
-                    </fieldset>
+                <h3>Padecimientos sufridos</h3>
 
-                    <fieldset>
-                        <legend>Beneficiarios</legend>
+                        <table>
+                            <tr>
+                                <th class="c1">Padecimiento</th>
+                                <th>¿Padece o ha padecido?</th>
+                            </tr>
+                            <tr>
+                                <td>Cáncer</td>
+                                <td>
+                                    <select>
+                                        <option>No</option>
+                                        <option>Sí</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Trombosis</td>
+                                <td>
+                                    <select>
+                                        <option>No</option>
+                                        <option>Sí</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enfisema pulmonar</td>
+                                <td>
+                                    <select>
+                                        <option>No</option>
+                                        <option>Sí</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Insuficiencia hepática</td>
+                                <td>
+                                    <select>
+                                        <option>No</option>
+                                        <option>Sí</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Infarto cardiaco</td>
+                                <td>
+                                    <select>
+                                        <option>No</option>
+                                        <option>Sí</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+            </fieldset>
+            <fieldset>
+                <legend>Beneficiarios</legend>
 
-                        <h3>Nombre del beneficiario 1</h3>
-                        <input type="text">
+                <h3>Nombre del beneficiario 1</h3>
+                <input type="text">
 
-                        <h3>Nombre del beneficiario 2</h3>
-                        <input type="text">
-                    </fieldset>
+                <h3>Nombre del beneficiario 2</h3>
+                <input type="text">
+            </fieldset>
             <fieldset>
                 <legend>Seguro a contratar</legend>
                 <h3>Cantidad a recibir</h3>
@@ -84,93 +156,88 @@
 
                 <h3>Método de pago</h3>
                 <div class="group">
-                    <label class="chk"><input type="radio" checked="checked">Pago anual</label>
-                    <label class="chk"><input type="radio">Pago semestral</label>
-                    <label class="chk"><input type="radio">Pago trimestral</label>
-                    <label class="chk"><input type="radio">Pago mensual</label>
+                    <select>
+                        <option>Pago anual</option>
+                        <option>Pago semestral</option>
+                        <option>Pago trimestral</option>
+                        <option>Pago mensual</option>
+                    </select>
                 </div>
             </fieldset>
-
-            <p class="chk-confirma"><label><input type="checkbox">He leído y acepto los términos y condiciones</label></p>
 
             <button type="button" class="boton-1" onClick="mostrarResumen()">Cotizar</button>
       </form>
     </div>
     <div id="footer">
         <h2>Cotización de seguro de vida</h2>
-        <p>Copyright © App name, 2021</p>
+        <p>Copyright © App name, 2022</p>
     </div>
 
-			<div id="confirmacion" title="Cotizador - resumen de tu seguro" class="ui-helper-hidden">
-				<table class="resumen" border="1">					
+			<div id="confirmacion" title="Resumen de tu seguro" class="ui-helper-hidden">
+				<table class="t-resumen">
 					<tr>
 						<td class="c1">
 							<h3>Costo anual</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
+                </table>
+                <table class="t-resumen">
                     <tr>
                         <td class="c1">
                             <h3>Forma de pago</h3>
-                            El seguro se pagará de forma
                         </td>
-                        <td class="c2"><input type="text" class="resumen"></td>
+                        <td class="c2"><input type="text" class="resumen" readonly></td>
                     </tr>
 					<tr>
 						<td class="c1">
 							<h3>Nombre del cliente</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
 					<tr>
 						<td class="c1">
 							<h3>Edad del cliente</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
 					<tr>
 						<td class="c1">
 							<h3>Sexo del cliente</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
+                </table>
+                <table class="t-resumen">
                     <tr>
-                        <td class="c1">
+                        <td class="c1" colspan="2">
                             <h3>Padecimientos</h3>
-                        </td>
-                        <td class="c2">
-                            <ul>
-                                <li>Padecimiento 1</li>
-                                <li>Padecimiento 2</li>
-                                <li>Padecimiento 3</li>
-                                <li>Padecimiento 4</li>
-                            </ul>
+                            <input class="resumen-largo">
                         </td>
                     </tr>
+                </table>
+                <table class="t-resumen">
 					<tr>
 						<td class="c1">
 							<h3>Nombre del beneficiario 1</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
 					<tr>
 						<td class="c1">
                             <h3>Nombre del beneficiario 2</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
 					<tr>
 						<td class="c1">
 							<h3>Importe que recibir</h3>
 						</td>
-						<td class="c2"><input type="text" class="resumen"></td>
+						<td class="c2"><input type="text" class="resumen" readonly></td>
 					</tr>
 				</table>
-			</div>
 
-			<div id="errores" title="Cotizador - errores" class="ui-helper-hidden">
-				<div id="texto-errores">
-				</div>
+                <button type="button" class="boton-1">¡Contratar ahora!</button>
 			</div>
         </div>
     </body>
