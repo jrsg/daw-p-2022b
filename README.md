@@ -34,7 +34,7 @@ Una vez calculado:
     4. Edad (años)
     5. Sexo (hombre o mujer)
     6. Estado de residencia (texto)
-    7. Padecimientos (lista no ordenada con los seleccionados)
+    7. Padecimientos (separados por comas)
     8. Nombre del beneficiario 1 y 2 (texto)
     9. Importe a recibir (importe)
 3. Los datos de nombre del asegurado, sexo, fecha de nacimiento, Estado de residencia, importe a recibir y el nombre de al menos 1 beneficiario son datos obligatorios, los cuales se valida su captura antes de mostrar el resumen y calcular el costo anual. Por cada dato obligatorio faltante, el programa lo reporta con un mensaje de error explícito (usa window.alert). (1.5 punto)
